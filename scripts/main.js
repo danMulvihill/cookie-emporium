@@ -23,15 +23,15 @@ if( !cookie ){
     if (greet == undefined) greet = "stranger";
     document.querySelector("#out").textContent = "Welcome Back, "+greet;
     document.querySelector("#sug .out").textContent = Cookies.get("sug");
-    for (let i = 1; i<Cookies.get("sug"); i++){
+    for (let i = 0; i<Cookies.get("sug"); i++){
         rainCookies("papayawhip")
     }
     document.querySelector("#choc .out").textContent = Cookies.get("choc");
-    for(let i = 1; i<Cookies.get("choc"); i++){
+    for(let i = 0; i<Cookies.get("choc"); i++){
         rainCookies("chocolate")
     }
     document.querySelector("#lemon .out").textContent = Cookies.get("lemon");
-    for(let i = 1; i<Cookies.get("lemon"); i++){
+    for(let i = 0; i<Cookies.get("lemon"); i++){
         rainCookies("yellow")
     }
  }
